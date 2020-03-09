@@ -18,10 +18,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Day  | Deliverable                                                  | Status |
 | ---- | ------------------------------------------------------------ | ------ |
 | D1   | Wireframe and UI (figma: https://www.figma.com/file/3scDXZePjvadqEBwMG139M/Untitled?node-id=0%3A1) |        |
-| D2   |                                                              |        |
-| D3   |                                                              |        |
-| D4   |                                                              |        |
-| D5   |                                                              |        |
+| D2   | Finish Wireframe, Research Libraries and other assest, [Code] Front Page |        |
+| D3   | Finish coding Front page, [Code] Projects                    |        |
+| D4   | [Code] Skill divs (MVP)                                      |        |
+| D5   | [Code] Contact Form, Skill Mind Map                          |        |
 | D6   | Present                                                      |        |
 
 
