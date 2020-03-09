@@ -17,9 +17,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Day  | Deliverable                                                  | Status |
 | ---- | ------------------------------------------------------------ | ------ |
-| D1   | Wireframe and UI (figma: https://www.figma.com/file/3scDXZePjvadqEBwMG139M/Untitled?node-id=0%3A1) |        |
+| D1   | Wireframe and UI                                             |        |
 | D2   | Finish Wireframe, Research Libraries and other assest, [Code] Front Page |        |
-| D3   | Finish coding Front page, [Code] Projects                    |        |
+| D3   | [Code] About me, [Code] Work history, [Code] Projects        |        |
 | D4   | [Code] Skill divs (MVP)                                      |        |
 | D5   | [Code] Contact Form, Skill Mind Map                          |        |
 | D6   | Present                                                      |        |
@@ -28,18 +28,43 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+My website will show to potential employers and clients will showcase a collection of projects and my accomplishments as a Software Engineer / Web Developer:
+
+### 6 Pages 
+
+- Front Page
+  - Navigation bar
+  - Tron-like background theme
+  - Link to twitter handle (@techienaut)
+  - Click to scroll down button.
+- About Me
+  - Showcase story
+  - headers: Methodical, Creative, Knowledge Seeker
+    - Descriptions underneath
+- Work History and Education
+  - "Connect with me on Linkedin" (Linkedin profile link)
+  - Work History
+  - Certifications
+- Projects
+  - All GA Projects
+  - Past Github projects
+  - Using UI Cards
+  - Google's API for spreadsheet
+- Skillset
+  - MVP: Using UI Cards for skills
+  - Extra: Mind Map Library showcasing knowledge tree.
+- Contact Form
+  - Links to social media
+  - Form to fill email and message
+  - google forms: emails me to my inbox
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+[Google Sheet](https://docs.google.com/spreadsheets/d/1DfAA8BO98XjX5GeqjctSKzKRZMktYXFHZGb8mR-fEQ0/edit?usp=sharing)
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
-
-[https://www.figma.com/](https://www.figma.com/)
-[https://mockflow.com/app/#Wireframe](https://mockflow.com/app/#Wireframe)
+ [WireFrame: (Should be the frame with a black background)](https://www.figma.com/file/3scDXZePjvadqEBwMG139M/Untitled?node-id=0%3A1)
 
 ## Time/Priority Matrix 
 
@@ -51,9 +76,13 @@ Now create a separate list starting with A and assign it one of the features.  C
 
 Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
-**See: https://www.figma.com/file/3scDXZePjvadqEBwMG139M/Untitled?node-id=3%3A0**
+**[Time Priority Matrix](https://www.figma.com/file/3scDXZePjvadqEBwMG139M/Untitled?node-id=3%3A0)**
 
 - click on "Time Priority" on the left side bar, under "Sheets"
+
+### MVP/PostMVP - 5min
+
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### - MVP
 
@@ -66,24 +95,11 @@ Once complete tally up the time and determine how long the project will take to 
 - Cards that show Skill set
 - Contact form: Uses google forms API
 
-#### - Extra (if have enough time)
+#### - PostMVP
 
 - Skillset Mind Map
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP (examples)
-
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
-
-#### PostMVP 
-
-- Anything else that is not MVP
+### 
 
 ## Functional Components
 
@@ -93,20 +109,25 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| WireFrame and Ideas              | H | 7 hrs | 5 hrs |  |
-| Retouch old projects             | H | 3hrs|                |             |
-| Moving projects to public github | H | 30 min |  |             |
-| [Coding] Front Page | H | 5 hr |  |  |
-| [Coding] Resume | H | 4 hr |  |  |
+| WireFrame and Ideas                | H | 7 hrs | 5 hrs |  |
+| Retouch old projects               | H | 3hrs|                |             |
+| Moving projects to public github   | H | 30 min |  |             |
+| **<u>Mobile-First</u>**            |  |  |  |             |
+| [Front Page] Tron Background | H | 3 hr |  |  |
+| [Front Page] Collapsible/Hamburger |  | 1.5 hr |  |  |
+| [About me] Content | H | 1.5 hr |  |  |
+| [About me] |  |  |  |  |
 | [Coding] Projects | H | 4 hr |  |  |
 | [Coding] Skill Mind Map | L | 7 hr |  |  |
 | [Coding] Contact Form | H | 2 hr |  |  |
+| **<u>Desktop (last touches)</u>** |  |  |  |  |
 | Total |  | 32.5 hr |  |  |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
 
 - https://github.com/Mindmapp/mmp (skill mind map)
+- [Bootstrap UI Cards](https://getbootstrap.com/docs/4.0/components/card/)
 
 ## Code Snippet
 
