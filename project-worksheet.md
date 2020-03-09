@@ -51,6 +51,10 @@ Now create a separate list starting with A and assign it one of the features.  C
 
 Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
+**See: https://www.figma.com/file/3scDXZePjvadqEBwMG139M/Untitled?node-id=3%3A0**
+
+- click on "Time Priority" on the left side bar, under "Sheets"
+
 #### - MVP
 
 - Wireframe and idea features
