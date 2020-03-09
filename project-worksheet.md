@@ -15,14 +15,14 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
-| Day  | Deliverable      | Status |
-| ---- | ---------------- | ------ |
-| D1   | Wireframe and UI |        |
-| D2   |                  |        |
-| D3   |                  |        |
-| D4   |                  |        |
-| D5   |                  |        |
-| D6   | Present          |        |
+| Day  | Deliverable                                                  | Status |
+| ---- | ------------------------------------------------------------ | ------ |
+| D1   | Wireframe and UI (figma: https://www.figma.com/file/3scDXZePjvadqEBwMG139M/Untitled?node-id=0%3A1) |        |
+| D2   |                                                              |        |
+| D3   |                                                              |        |
+| D4   |                                                              |        |
+| D5   |                                                              |        |
+| D6   | Present                                                      |        |
 
 
 
