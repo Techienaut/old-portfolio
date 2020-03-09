@@ -68,17 +68,12 @@ My website will show to potential employers and clients will showcase a collecti
 
 ## Time/Priority Matrix 
 
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
 **[Time Priority Matrix](https://www.figma.com/file/3scDXZePjvadqEBwMG139M/Untitled?node-id=3%3A0)**
 
-- click on "Time Priority" on the left side bar, under "Sheets"
+1. click on "Time Priority" on the left side bar, under "Sheets"
+2. Ctrl+Mouse Wheel to zoom in.
 
 ### MVP/PostMVP - 5min
 
@@ -86,18 +81,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### - MVP
 
-- Wireframe and idea features
-- Retouch old projects
-- Move old projects to public github
-- Front page (as seen on Figma)
-- Nav bar that collapses into hamburger 
-- Divs, wrapped in spaceships, showcasing github project images and links
-- Cards that show Skill set
-- Contact form: Uses google forms API
+- Everything listed in Time Matrix **except** Skillset Mind Map and retouching old Github projects
 
 #### - PostMVP
 
 - Skillset Mind Map
+- Retouch old github projects
 
 ### 
 
@@ -109,19 +98,27 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| WireFrame and Ideas                | H | 7 hrs | 5 hrs |  |
-| Retouch old projects               | H | 3hrs|                |             |
-| Moving projects to public github   | H | 30 min |  |             |
-| **<u>Mobile-First</u>**            |  |  |  |             |
-| [Front Page] Tron Background | H | 3 hr |  |  |
-| [Front Page] Collapsible/Hamburger |  | 1.5 hr |  |  |
-| [About me] Content | H | 1.5 hr |  |  |
-| [About me] |  |  |  |  |
-| [Coding] Projects | H | 4 hr |  |  |
-| [Coding] Skill Mind Map | L | 7 hr |  |  |
-| [Coding] Contact Form | H | 2 hr |  |  |
-| **<u>Desktop (last touches)</u>** |  |  |  |  |
-| Total |  | 32.5 hr |  |  |
+| A: WireFrame and Ideas                            | H | 7 hrs | 5 hrs |  |
+| B: Retouch old projects                           |    M     | 3hrs|                |             |
+| C: Moving projects to public github               | H | 30 min |  |             |
+| Sub-Total                                         |  | 10.5 hr |  |             |
+| **<u>Mobile-First</u>**                           |  |  |  |             |
+| D: [Front Page] Tron Background | H | 2 hr |  |  |
+| E: [Front Page] Collapsible/Hamburger | H | 1 hr |  |  |
+| F: [About me] Content | H | 1.5 hr |  |  |
+| G: [About me] HTML and CSS | H | 2 hr |  |  |
+| H: [Work Hist and Ed.] Content | H | 0.25 hr |  |  |
+| I: [Work Hist] HTML and CSS | H | 2 hr |  |  |
+| J: [Projects] Google API data retrival | H | 0.25 hr |  |  |
+| K: [Projects] HTML and CSS | H | 2 hr |  |  |
+| L: [Skillset] Content | H | 1.75 hr |  |  |
+| M: [Skillset] MVP HTML and CSS | H | 2 hr |  |  |
+| N: [Skillset] Mind Map library | L | 3 hr |  |  |
+| O: [Contact Form] HTML and CSS | H | 1 hr |  |  |
+| P: [Contact Form] Google Forms API => email send. | M | 2.5 hr |  |  |
+| Sub-Total |  | 19 hr |  |  |
+| Q: **<u>Desktop (last touches)</u>** |  | 4.75 hr = (19 * .25) |  |  |
+| <u>**Total**</u> |  | 23.75 hr | 5 hrs |  |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
