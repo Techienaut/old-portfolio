@@ -81,7 +81,22 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### - MVP
 
-- Everything listed in Time Matrix **except** Skillset Mind Map and retouching old Github projects
+- A: WireFrame and Ideas
+  C: Moving projects to public github
+  Mobile-First
+  D: [Front Page] Tron Background
+  E: [Front Page] Collapsible/Hamburger
+  F: [About me] Content
+  G: [About me] HTML and CSS
+  H: [Work Hist and Ed.] Content
+  I: [Work Hist] HTML and CSS
+  J: [Projects] Google API data retrival
+  K: [Projects] HTML and CSS
+  L: [Skillset] Content
+  M: [Skillset] MVP HTML and CSS
+  O: [Contact Form] HTML and CSS
+  P: [Contact Form] Google Forms API
+  Q: Desktop-Second (last touches)
 
 #### - PostMVP
 
