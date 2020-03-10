@@ -15,14 +15,14 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
-| Day  | Deliverable                                                  | Status |
-| ---- | ------------------------------------------------------------ | ------ |
-| D1   | Wireframe and UI                                             |        |
-| D2   | Finish Wireframe, Research Libraries and other assest, [Code] Front Page |        |
-| D3   | [Code] About me, [Code] Work history, [Code] Projects        |        |
-| D4   | [Code] Skill divs (MVP)                                      |        |
-| D5   | [Code] Contact Form, Skill Mind Map                          |        |
-| D6   | Present                                                      |        |
+| Day  | Deliverable                                                  | Status   |
+| ---- | ------------------------------------------------------------ | -------- |
+| D1   | Wireframe and UI                                             | Complete |
+| D2   | Finish Wireframe, Research Libraries and other assest, [Code] Front Page |          |
+| D3   | [Code] About me, [Code] Work history, [Code] Projects        |          |
+| D4   | [Code] Skill divs (MVP)                                      |          |
+| D5   | [Code] Contact Form, Skill Mind Map                          |          |
+| D6   | Present                                                      |          |
 
 
 
