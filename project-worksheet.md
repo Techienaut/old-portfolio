@@ -18,9 +18,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Day  | Deliverable                                                  | Status   |
 | ---- | ------------------------------------------------------------ | -------- |
 | D1   | Wireframe and UI                                             | Complete |
-| D2   | Finish Wireframe, Research Libraries and other assest, [Code] Front Page |          |
-| D3   | [Code] About me, [Code] Work history, [Code] Projects        |          |
-| D4   | [Code] Skill divs (MVP)                                      |          |
+| D2   |                                                              | Complete |
+| D3   | Finish Wireframe, Research Libraries and other assest, [Code] Front Page, [Code] About me, |          |
+| D4   | [Code] Work history, [Code] Projects, [Code] Skill divs (MVP) |          |
 | D5   | [Code] Contact Form, Skill Mind Map                          |          |
 | D6   | Present                                                      |          |
 
