@@ -6,16 +6,30 @@ body {
   font-family: Roboto, Helvetica, sans-serif;
   color: white;
 }
-.main-projects {
-  display: grid;
-  grid-template-rows: min-content auto;
-}
 .page {
-  height: 100vh;
   width: 100vw;
   background: #303030;
   display: grid;
-  grid-template-rows: min-content auto min-content;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 100vw;
+  grid-template-areas:
+    "main-home"
+    "main-projects";
+}
+.main-home {
+  height: calc(100vh - 68px);
+  grid-area: "main-home";
+  border: 4px solid red;
+}
+.main-projects,
+.main-aboutme {
+  height: 100vh;
+}
+.empty {
+  height: 68px;
+}
+.main-projects {
+  grid-area: "main-projects";
 }
 header {
   background: #303030;
@@ -49,6 +63,33 @@ h2 {
   font-size: 18px;
   text-align: center;
 }
+.home-container {
+  margin: auto;
+  border: 4px solid red;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.techienaut-twitter {
+  font-size: 20px;
+  padding: 8px;
+  text-decoration: underline;
+  color: white;
+}
+.techienaut-logo {
+  width: 128px;
+}
+.h2-softdev {
+  line-height: 1.75;
+  font-size: 24px;
+}
+
+/* About Me */
+.aboutme-container {
+}
+
 .projects-container {
   display: flex;
   overflow-x: auto;
@@ -82,8 +123,17 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .home-container {
+    top: 10%;
+  }
 }
 @media (min-width: 1024px) {
+  .home-container {
+    top: 20%;
+  }
+  .techienaut-logo {
+    width: 224px;
+  }
   .projects-container {
     margin: 0 128px;
   }
