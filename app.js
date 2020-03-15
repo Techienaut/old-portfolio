@@ -10,6 +10,18 @@ let source = `https://spreadsheets.google.com/feeds/list/${id}/od6/public/values
 // fetch queries the url provided and requests that the data be sent to it
 // it receives JSON => JS Object Notation
 // we use .json() to parse the data from "{}" to an full blown {}
+// var navlnks = $(".nav a");
+// $(document).ready(function() {
+//   $(document).on("click", ".nav-item a", function(e) {
+//     $(this)
+//       .parent()
+//       .addClass("active")
+//       .siblings()
+//       .removeClass("active");
+//   });
+// });
+$("#projects-container").flickity();
+
 fetch(source)
   .then(response => response.json()) // this parses the data from string back into an object
   .then(data => {
@@ -70,4 +82,10 @@ function app(projects) {
     $projectsContainer.append($projectContent);
   });
   // the rest of your app goes here
+}
+function submitForm() {
+  var frm = $("#contact-form");
+  frm.submit(); // Submit the form
+  frm.reset(); // Reset all form data
+  return false; // Prevent page refresh
 }

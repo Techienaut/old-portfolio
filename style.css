@@ -1,34 +1,41 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: Roboto, Helvetica, sans-serif;
   color: white;
-}
-.page {
   width: 100vw;
   background: #303030;
-  display: grid;
-  grid-template-rows: min-content min-content;
-  grid-template-columns: 100vw;
-  grid-template-areas:
-    "main-home"
-    "main-projects";
+}
+nav {
+  background: #303030;
+}
+header {
+  position: sticky;
+  top: 0;
 }
 .main-home {
-  height: calc(100vh - 68px);
-  grid-area: "main-home";
-}
-.main-projects,
-.main-aboutme {
   height: 100vh;
+  border: 4px solid red;
+}
+.main-hom,
+.main-aboutme,
+.main-projects,
+.main-skills,
+.main-contact {
+  height: 100vh;
+  border: 4px solid red;
+}
+.main-workhist {
+  min-height: 100vh;
+  border: 4px solid red;
 }
 .empty {
   height: 68px;
-}
-.main-projects {
-  grid-area: "main-projects";
 }
 header {
   background: #303030;
@@ -111,12 +118,9 @@ h2 {
   padding: 8px;
   text-align: left;
 }
-
 .main-workhist {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 .workhist-container {
   display: flex;
   flex-wrap: wrap;
@@ -162,9 +166,8 @@ h2 {
   border-radius: 25px;
   margin: 8px;
 }
-.projects-container {
-  display: flex;
-  overflow-x: auto;
+#projects {
+  margin: 64px 0 0 0;
 }
 .project-title {
   text-decoration: underline;
@@ -193,21 +196,37 @@ h2 {
   left: 22px;
   z-index: 1;
 }
-
+iframe {
+  border: 12px solid #c4c4c4;
+  border-radius: 25px;
+  width: 1000px;
+  height: 600px;
+}
 @media (min-width: 768px) {
   .home-container {
     top: 10%;
   }
-}
-@media (min-width: 1024px) {
-  .home-container {
-    top: 20%;
-  }
   .techienaut-logo {
     width: 224px;
   }
-  .projects-container {
-    margin: 0 128px;
+  h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  .home-container > a {
+    font-size: 24px;
+  }
+  .home-container > h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .home-container {
+    top: 10%;
+  }
+  .techienaut-logo {
+    width: 256px;
   }
   .project-spaceship {
     width: 184px;
@@ -218,5 +237,53 @@ h2 {
     top: 28px;
     left: 34px;
     z-index: 1;
+  }
+}
+
+/* Contact */
+.main-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+
+/* Create two columns that float next to eachother */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
 }

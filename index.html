@@ -12,13 +12,17 @@
       crossorigin="anonymous"
     />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Changa:300,400,500,600,700|Roboto:300,400,500,700,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
     <title>Anthony Flores Portfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--
         <div class="scroll-arrow">
           <div class="scroll-1-dot"></div>
@@ -28,154 +32,276 @@
           <div class="scroll-5-dot"></div>
         </div>
     -->
-    <div class="page">
-      <header>
-        <nav
-          class="navbar navbar-dark navbar-expand-lg justify-content-between"
-        >
-          <a class="navbar-brand" href="#">
-            <img class="logo" src="./imgs/Logo.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  About Me
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Work History
-                </a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  Projects
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Skills
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <main class="main-home">
-        <div class="home-container">
-          <h1>Anthony Flores</h1>
-          <a href="https://twitter.com/techienaut" class="techienaut-twitter">
-            @techienaut
-          </a>
-          <img
-            class="techienaut-logo"
-            src="./imgs/techienaut-logo.png"
-            alt=""
-          />
-          <h2 class="h2-softdev">Software Engineer/<br />Web Developer</h2>
-        </div>
-      </main>
-      <main class="main-aboutme">
-        <div class="empty"></div>
-        <div class="aboutme-container">
-          <h1>About Me</h1>
-          <div class="header-seperator"></div>
-          <p>
-            Hi, my name is Anthony (a.k.a @techienaut),<br />
-            I’ve been playing around with software for 10 years. Going from
-            troubleshooting to actually building useful scripts. Througout my
-            years, I’ve dabbled in different languages and libraries. I enjoy my
-            work and am constantly challenging myself.
-          </p>
-        </div>
-      </main>
-      <main class="main-workhist">
-        <div class="empty"></div>
-        <div class="workhist-container">
-          <div class="work-container">
-            <h1>Work History</h1>
-            <div class="header-seperator"></div>
-            <h3>• IT Intern - Elite Dental<br />&nbsp;&nbsp;Partners</h3>
-            <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-            <div class="item-seperator"></div>
-            <h3>• IT Intern - Elite Dental Partners</h3>
-            <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-            <div class="item-seperator"></div>
-            <h3>• IT Intern - Elite Dental Partners</h3>
-            <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-            <div class="item-seperator"></div>
-            <h3>• IT Intern - Elite Dental Partners</h3>
-            <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-            <div class="item-seperator"></div>
-            <h3>• IT Intern - Elite Dental Partners</h3>
-            <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-            <div class="item-seperator"></div>
-          </div>
-          <div class="certs-container">
-            <h1>Certifications</h1>
-            <div class="header-seperator"></div>
-            <h3>
-              • Cisco CCNA
-            </h3>
-            <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-            <div class="item-seperator"></div>
-            <h3>
-              • CompTIA Security+
-            </h3>
-            <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-          </div>
-        </div>
-      </main>
-      <main class="main-projects">
-        <div class="empty"></div>
-        <h1>Projects</h1>
-        <div class="projects-container">
-          <div class="project-item">
-            <a href="#" class="project-link">
-              <h2 class="project-title">
-                Startup<br />
-                Matchmaker
-              </h2>
+    <!-- <header> -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+      <!-- class="navbar navbar-dark navbar-expand-lg justify-content-between fixed-top" -->
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="./imgs/Logo.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#Home">
+              Home
             </a>
-            <div class="project-img-container">
-              <img
-                src="./imgs/spaceship.png"
-                alt=""
-                class="project-spaceship"
-              />
-              <img
-                src="./imgs/startup matchmaker 1.png"
-                alt=""
-                class="project-img"
-              />
-            </div>
-            <a href="#">(Github)</a>
-          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About-Me">
+              About Me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Work-Hist">
+              Work History
+            </a>
+          </li>
+          <li class="nav-item" href>
+            <a class="nav-link" href="#Projects">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills">
+              Skills
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- </header> -->
+    <main id="Home" class="main-home">
+      <div class="empty"></div>
+      <div class="home-container">
+        <h1>Anthony Flores</h1>
+        <a href="https://twitter.com/techienaut" class="techienaut-twitter">
+          @techienaut
+        </a>
+        <img class="techienaut-logo" src="./imgs/techienaut-logo.png" alt="" />
+        <h2 class="h2-softdev">Software Engineer/<br />Web Developer</h2>
+      </div>
+    </main>
+    <main id="About-Me" class="main-aboutme">
+      <div class="empty"></div>
+      <div class="aboutme-container">
+        <h1>About Me</h1>
+        <div class="header-seperator"></div>
+        <p>
+          Hi, my name is Anthony (a.k.a @techienaut),<br />
+          I’ve been playing around with software for 10 years. Going from
+          troubleshooting to actually building useful scripts. Througout my
+          years, I’ve dabbled in different languages and libraries. I enjoy my
+          work and am constantly challenging myself.
+        </p>
+      </div>
+    </main>
+    <main id="Work-Hist" class="main-workhist">
+      <div class="empty"></div>
+      <div class="workhist-container">
+        <div class="work-container">
+          <h1>Work History</h1>
+          <div class="header-seperator"></div>
+          <h3>• IT Intern - Elite Dental<br />&nbsp;&nbsp;Partners</h3>
+          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <div class="item-seperator"></div>
+          <h3>• IT Intern - Elite Dental Partners</h3>
+          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <div class="item-seperator"></div>
+          <h3>• IT Intern - Elite Dental Partners</h3>
+          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <div class="item-seperator"></div>
+          <h3>• IT Intern - Elite Dental Partners</h3>
+          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <div class="item-seperator"></div>
+          <h3>• IT Intern - Elite Dental Partners</h3>
+          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <div class="item-seperator"></div>
         </div>
-      </main>
+        <div class="certs-container">
+          <h1>Certifications</h1>
+          <div class="header-seperator"></div>
+          <h3>
+            • Cisco CCNA
+          </h3>
+          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <div class="item-seperator"></div>
+          <h3>
+            • CompTIA Security+
+          </h3>
+          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+        </div>
+      </div>
+    </main>
+    <div id="Projects" class="main-projects">
+      <div class="empty"></div>
+      <h1>Projects</h1>
+      <div id="projects-container">
+        <div class="project-item slide">
+          <a href="#" class="project-link">
+            <h2 class="project-title">
+              Startup<br />
+              Matchmaker
+            </h2>
+          </a>
+          <div class="project-img-container">
+            <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
+            <img
+              src="./imgs/startup matchmaker 1.png"
+              alt=""
+              class="project-img"
+            />
+          </div>
+          <a href="#">(Github)</a>
+        </div>
+        <div class="project-item slide">
+          <a href="#" class="project-link">
+            <h2 class="project-title">
+              Startup<br />
+              Matchmaker
+            </h2>
+          </a>
+          <div class="project-img-container">
+            <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
+            <img
+              src="./imgs/startup matchmaker 1.png"
+              alt=""
+              class="project-img"
+            />
+          </div>
+          <a href="#">(Github)</a>
+        </div>
+        <div class="project-item slide">
+          <a href="#" class="project-link">
+            <h2 class="project-title">
+              Startup<br />
+              Matchmaker
+            </h2>
+          </a>
+          <div class="project-img-container">
+            <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
+            <img
+              src="./imgs/startup matchmaker 1.png"
+              alt=""
+              class="project-img"
+            />
+          </div>
+          <a href="#">(Github)</a>
+        </div>
+        <div class="project-item slide">
+          <a href="#" class="project-link">
+            <h2 class="project-title">
+              Startup<br />
+              Matchmaker
+            </h2>
+          </a>
+          <div class="project-img-container">
+            <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
+            <img
+              src="./imgs/startup matchmaker 1.png"
+              alt=""
+              class="project-img"
+            />
+          </div>
+          <a href="#">(Github)</a>
+        </div>
+      </div>
     </div>
+    <main id="Skills" class="main-skills">
+      <div class="empty"></div>
+      <!-- width="600"
+        height="400" -->
+      <!-- <iframe
+        frameborder="0"
+        src="https://www.mindmeister.com/maps/public_map_shell/1439015043/skills?width=600&height=400&z=auto"
+        scrolling="no"
+        style="overflow: hidden; margin-bottom: 5px;"
+        >Your browser is not able to display frames. Please visit
+        <a href="https://www.mindmeister.com/1439015043/skills" target="_blank"
+          >Skills</a
+        >
+        on MindMeister.</iframe
+      > -->
+      <div class="mb-5">
+        <a href="https://www.mindmeister.com/1439015043/skills" target="_blank"
+          >Skills</a
+        >
+        by
+        <a
+          href="https://www.mindmeister.com/users/channel/40875105"
+          target="_blank"
+          >Anthony Flores</a
+        >
+      </div>
+    </main>
+    <main id="Contact" class="main-contact">
+      <div class="empty"></div>
+      <div class="contact-container">
+        <div style="text-align:center">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="contact-form-container">
+          <form
+            id="contact-form"
+            mathod="post"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSeE-CK5vn9ug-KFmCDf_xO1C3LSm5t_t63lMRDr8CFCm551Cg/formResponse"
+          >
+            <label for="entry.2005620554">First Name</label>
+            <input
+              type="text"
+              id="entry.2005620554"
+              name="entry.2005620554"
+              placeholder="Your name.."
+              required
+            />
+            <label for="entry.578200519">Last Name</label>
+            <input
+              type="text"
+              id="entry.578200519"
+              name="entry.578200519"
+              placeholder="Your last name.."
+              required
+            />
+            <label for="emailAddress">Email</label>
+            <input
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+              placeholder="Your email.."
+              required
+            />
+            <label for="entry.839337160">Message</label>
+            <textarea
+              id="entry.839337160"
+              name="entry.839337160"
+              placeholder="Write something.."
+              style="height:170px"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              value="Submit"
+              id="btnsubmit"
+              onclick="submitForm()"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -191,6 +317,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
