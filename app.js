@@ -20,8 +20,7 @@ let source = `https://spreadsheets.google.com/feeds/list/${id}/od6/public/values
 //       .removeClass("active");
 //   });
 // });
-$("#projects-container").flickity();
-
+smoothScroll();
 fetch(source)
   .then(response => response.json()) // this parses the data from string back into an object
   .then(data => {
@@ -39,53 +38,44 @@ fetch(source)
       };
     });
     app(projects);
+    $("#projects-container").flickity();
   }) // this provides us access to the parse data
   .catch(err => console.log("err", err));
 
 function app(projects) {
   projects.forEach(project => {
     console.log(project);
-    let $projectsContainer = $(".projects-container");
+    let $projectsContainer = $("#projects-container");
     let $projectContent = $(`
-      <div class="project-item">
-        <a href="${project.url}" class="project-link">
+      <div class="project-item slide">
+        <a href="${project.url}" target="_blank" class="project-link">
           <h2 class="project-title">
             ${project.title}
           </h2>
         </a>
         <div class="project-img-container">
-          <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
-          <img src="${project.image}" alt="" class="project-img" />
+            <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
+            <a href="${project.url}" target="_blank" class="project-link">
+              <img src="${project.image}" alt="" class="project-img" />
+            </a>
         </div>
-        <a href="${project.github}">(Github)</a>
-      </div>
-    `);
-    $projectsContainer.append($projectContent);
-  });
-  projects.forEach(project => {
-    console.log(project);
-    let $projectsContainer = $(".projects-container");
-    let $projectContent = $(`
-      <div class="project-item">
-        <a href="${project.url}" class="project-link">
-          <h2 class="project-title">
-            ${project.title}
-          </h2>
-        </a>
-        <div class="project-img-container">
-          <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
-          <img src="${project.image}" alt="" class="project-img" />
-        </div>
-        <a href="${project.github}">(Github)</a>
+        <a href="${project.github}" target="_blank">(Github)</a>
       </div>
     `);
     $projectsContainer.append($projectContent);
   });
   // the rest of your app goes here
 }
-function submitForm() {
-  var frm = $("#contact-form");
-  frm.submit(); // Submit the form
-  frm.reset(); // Reset all form data
-  return false; // Prevent page refresh
+
+//Code taken from: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link#answer-7717572
+function smoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
 }

@@ -23,18 +23,7 @@
     <title>Anthony Flores Portfolio</title>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!--
-        <div class="scroll-arrow">
-          <div class="scroll-1-dot"></div>
-          <div class="scroll-2-dot"></div>
-          <div class="scroll-3-dot"></div>
-          <div class="scroll-4-dot"></div>
-          <div class="scroll-5-dot"></div>
-        </div>
-    -->
-    <!-- <header> -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-      <!-- class="navbar navbar-dark navbar-expand-lg justify-content-between fixed-top" -->
       <a class="navbar-brand" href="#">
         <img class="logo" src="./imgs/Logo.png" alt="" />
       </a>
@@ -84,17 +73,24 @@
         </ul>
       </div>
     </nav>
-    <!-- </header> -->
     <main id="Home" class="main-home">
       <div class="empty"></div>
       <div class="home-container">
         <h1>Anthony Flores</h1>
-        <a href="https://twitter.com/techienaut" class="techienaut-twitter">
+        <a
+          href="https://twitter.com/techienaut"
+          target="_blank"
+          class="techienaut-twitter"
+        >
           @techienaut
         </a>
         <img class="techienaut-logo" src="./imgs/techienaut-logo.png" alt="" />
         <h2 class="h2-softdev">Software Engineer/<br />Web Developer</h2>
       </div>
+      <a href="#About-Me" class="scroll-link">
+        <h3>Scroll</h3>
+        <img src="./imgs/scroll arrow.png" alt="" />
+      </a>
     </main>
     <main id="About-Me" class="main-aboutme">
       <div class="empty"></div>
@@ -102,35 +98,49 @@
         <h1>About Me</h1>
         <div class="header-seperator"></div>
         <p>
-          Hi, my name is Anthony (a.k.a @techienaut),<br />
-          I’ve been playing around with software for 10 years. Going from
+          Hi, my name is Anthony (also known on the Web as
+          <strong>@techienaut</strong>).<br /><br />
+          I’ve been playing around with software for 10 years: Going from
           troubleshooting to actually building useful scripts. Througout my
-          years, I’ve dabbled in different languages and libraries. I enjoy my
+          years I’ve dabbled in different languages and libraries. I enjoy my
           work and am constantly challenging myself.
         </p>
       </div>
+      <a href="#Work-Hist" class="scroll-link">
+        <h3>Scroll</h3>
+        <img src="./imgs/scroll arrow.png" alt="" />
+      </a>
     </main>
     <main id="Work-Hist" class="main-workhist">
       <div class="empty"></div>
       <div class="workhist-container">
         <div class="work-container">
-          <h1>Work History</h1>
+          <div class="work-header-container">
+            <div class="empty-linkedin-logo"></div>
+            <h1>Work History</h1>
+            <a
+              href="https://www.linkedin.com/in/anthony-flores-292ab047/"
+              target="_blank"
+            >
+              <img
+                class="linkedin-logo"
+                src="./imgs/LinkedIn-Logo.png"
+                alt=""
+              />
+            </a>
+          </div>
           <div class="header-seperator"></div>
           <h3>• IT Intern - Elite Dental<br />&nbsp;&nbsp;Partners</h3>
           <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
           <div class="item-seperator"></div>
-          <h3>• IT Intern - Elite Dental Partners</h3>
-          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <h3>• PC Support - Above and Beyond Family Recovery Center</h3>
+          <h4>&nbsp;&nbsp;June 2019 – July 2019</h4>
           <div class="item-seperator"></div>
-          <h3>• IT Intern - Elite Dental Partners</h3>
-          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <h3>• PC Support Specialist - Parkland College</h3>
+          <h4>&nbsp;&nbsp;July 2013 – Feb 2014</h4>
           <div class="item-seperator"></div>
-          <h3>• IT Intern - Elite Dental Partners</h3>
-          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-          <div class="item-seperator"></div>
-          <h3>• IT Intern - Elite Dental Partners</h3>
-          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
-          <div class="item-seperator"></div>
+          <h3>• Engineering IT Support Consultant - UIUC</h3>
+          <h4>&nbsp;&nbsp;June 2012 – Jan 2013</h4>
         </div>
         <div class="certs-container">
           <h1>Certifications</h1>
@@ -138,12 +148,18 @@
           <h3>
             • Cisco CCNA
           </h3>
-          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <h4>&nbsp;&nbsp;June 2016</h4>
           <div class="item-seperator"></div>
           <h3>
             • CompTIA Security+
           </h3>
-          <h4>&nbsp;&nbsp;July 2019 - Aug 2019</h4>
+          <h4>&nbsp;&nbsp;June 2017</h4>
+        </div>
+        <div class="workhist-arrow-container">
+          <a href="#Projects" class="scroll-link">
+            <h3>Scroll</h3>
+            <img src="./imgs/scroll arrow.png" alt="" />
+          </a>
         </div>
       </div>
     </main>
@@ -151,8 +167,8 @@
       <div class="empty"></div>
       <h1>Projects</h1>
       <div id="projects-container">
-        <div class="project-item slide">
-          <a href="#" class="project-link">
+        <div class="project-item slide invisable">
+          <a class="project-link">
             <h2 class="project-title">
               Startup<br />
               Matchmaker
@@ -166,66 +182,28 @@
               class="project-img"
             />
           </div>
-          <a href="#">(Github)</a>
-        </div>
-        <div class="project-item slide">
-          <a href="#" class="project-link">
-            <h2 class="project-title">
-              Startup<br />
-              Matchmaker
-            </h2>
-          </a>
-          <div class="project-img-container">
-            <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
-            <img
-              src="./imgs/startup matchmaker 1.png"
-              alt=""
-              class="project-img"
-            />
-          </div>
-          <a href="#">(Github)</a>
-        </div>
-        <div class="project-item slide">
-          <a href="#" class="project-link">
-            <h2 class="project-title">
-              Startup<br />
-              Matchmaker
-            </h2>
-          </a>
-          <div class="project-img-container">
-            <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
-            <img
-              src="./imgs/startup matchmaker 1.png"
-              alt=""
-              class="project-img"
-            />
-          </div>
-          <a href="#">(Github)</a>
-        </div>
-        <div class="project-item slide">
-          <a href="#" class="project-link">
-            <h2 class="project-title">
-              Startup<br />
-              Matchmaker
-            </h2>
-          </a>
-          <div class="project-img-container">
-            <img src="./imgs/spaceship.png" alt="" class="project-spaceship" />
-            <img
-              src="./imgs/startup matchmaker 1.png"
-              alt=""
-              class="project-img"
-            />
-          </div>
-          <a href="#">(Github)</a>
+          <a>(Github)</a>
         </div>
       </div>
+      <div>
+        Spacehip icon made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <a href="#Skills" class="scroll-link">
+        <h3>Scroll</h3>
+        <img src="./imgs/scroll arrow.png" alt="" />
+      </a>
     </div>
     <main id="Skills" class="main-skills">
       <div class="empty"></div>
-      <!-- width="600"
-        height="400" -->
-      <!-- <iframe
+      <h1>Skills</h1>
+      <iframe
         frameborder="0"
         src="https://www.mindmeister.com/maps/public_map_shell/1439015043/skills?width=600&height=400&z=auto"
         scrolling="no"
@@ -234,29 +212,26 @@
         <a href="https://www.mindmeister.com/1439015043/skills" target="_blank"
           >Skills</a
         >
-        on MindMeister.</iframe
-      > -->
-      <div class="mb-5">
-        <a href="https://www.mindmeister.com/1439015043/skills" target="_blank"
-          >Skills</a
-        >
-        by
-        <a
-          href="https://www.mindmeister.com/users/channel/40875105"
-          target="_blank"
-          >Anthony Flores</a
-        >
-      </div>
+        on MindMeister.
+      </iframe>
+      <a href="#Contact" class="scroll-link">
+        <h3>Scroll</h3>
+        <img src="./imgs/scroll arrow.png" alt="" />
+      </a>
     </main>
     <main id="Contact" class="main-contact">
       <div class="empty"></div>
       <div class="contact-container">
         <div style="text-align:center">
           <h1>Contact Me</h1>
+          <h2>
+            (Re-directs to a Google Form. <br />
+            Please submit afterwards).
+          </h2>
         </div>
         <div class="contact-form-container">
           <form
-            id="contact-form"
+            id="mG61Hd"
             mathod="post"
             action="https://docs.google.com/forms/d/e/1FAIpQLSeE-CK5vn9ug-KFmCDf_xO1C3LSm5t_t63lMRDr8CFCm551Cg/formResponse"
           >
@@ -292,12 +267,8 @@
               style="height:170px"
               required
             ></textarea>
-            <input
-              type="submit"
-              value="Submit"
-              id="btnsubmit"
-              onclick="submitForm()"
-            />
+
+            <input type="submit" value="Send" />
           </form>
         </div>
       </div>

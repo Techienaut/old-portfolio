@@ -11,55 +11,8 @@ body {
   width: 100vw;
   background: #303030;
 }
-nav {
-  background: #303030;
-}
-header {
-  position: sticky;
-  top: 0;
-}
-.main-home {
-  height: 100vh;
-  border: 4px solid red;
-}
-.main-hom,
-.main-aboutme,
-.main-projects,
-.main-skills,
-.main-contact {
-  height: 100vh;
-  border: 4px solid red;
-}
-.main-workhist {
-  min-height: 100vh;
-  border: 4px solid red;
-}
-.empty {
-  height: 68px;
-}
-header {
-  background: #303030;
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  width: 42px;
-}
-.hamburger {
-  display: flex;
-  margin: 8px 0;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 32px;
-  height: 24px;
-}
-.hamburger > div {
-  background: white;
-  height: 2px;
-}
-.nav-link {
-  font-family: Roboto, Helvetica, sans-serif;
+a {
+  cursor: pointer;
 }
 h1 {
   font-size: 32px;
@@ -69,13 +22,53 @@ h2 {
   font-size: 18px;
   text-align: center;
 }
+
+.main-home,
+.main-aboutme,
+.main-workhist,
+.main-projects,
+.main-skills,
+.main-contact {
+  min-height: 100vh;
+}
+.empty {
+  height: 68px;
+}
+
+/* Navbar */
+nav {
+  background: #303030;
+}
+.logo {
+  width: 42px;
+}
+.nav-link {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+/*Home*/
+.main-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-link {
+  text-align: center;
+  color: white;
+}
+.scroll-link > h3 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+.scroll-link > img {
+  width: 64px;
+}
 .home-container {
   margin: auto;
   margin: auto auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 .techienaut-twitter {
   font-size: 20px;
@@ -94,13 +87,14 @@ h2 {
 /* About Me */
 .main-aboutme {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .aboutme-container {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 90%;
   border: 6px solid #c4c4c4;
   background-color: rgba(255, 139, 36, 0.69);
   border-radius: 25px;
@@ -118,9 +112,8 @@ h2 {
   padding: 8px;
   text-align: left;
 }
-.main-workhist {
-}
 
+/*Work Hist*/
 .workhist-container {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +123,7 @@ h2 {
 .work-container {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 90%;
   border: 6px solid #c4c4c4;
   background-color: rgba(48, 193, 255, 0.62);
   border-radius: 25px;
@@ -152,6 +145,21 @@ h2 {
   font-size: 14px;
   margin-bottom: 3px;
 }
+.work-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkedin-logo,
+.empty-linkedin-logo {
+  width: 48px;
+  height: 48px;
+}
+.linkedin-logo {
+  border: 2px solid #c4c4c4;
+  border-radius: 6px;
+  margin: 8px 0 8px 12px;
+}
 .item-seperator {
   height: 2px;
   width: 100%;
@@ -160,14 +168,31 @@ h2 {
 .certs-container {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 90%;
   border: 6px solid #c4c4c4;
   background-color: rgba(255, 139, 36, 0.69);
   border-radius: 25px;
   margin: 8px;
 }
-#projects {
-  margin: 64px 0 0 0;
+.workhist-arrow-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Projects*/
+.main-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#projects-container {
+  width: 100%;
+}
+.invisable {
+  visibility: hidden;
 }
 .project-title {
   text-decoration: underline;
@@ -196,53 +221,22 @@ h2 {
   left: 22px;
   z-index: 1;
 }
+.main-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 iframe {
   border: 12px solid #c4c4c4;
   border-radius: 25px;
-  width: 1000px;
-  height: 600px;
+  height: 70vh;
+  width: 80%;
 }
-@media (min-width: 768px) {
-  .home-container {
-    top: 10%;
-  }
-  .techienaut-logo {
-    width: 224px;
-  }
-  h1 {
-    font-size: 48px;
-    text-align: center;
-  }
-  .home-container > a {
-    font-size: 24px;
-  }
-  .home-container > h2 {
-    font-size: 32px;
-    text-align: center;
-  }
-}
-@media (min-width: 1024px) {
-  .home-container {
-    top: 10%;
-  }
-  .techienaut-logo {
-    width: 256px;
-  }
-  .project-spaceship {
-    width: 184px;
-  }
-  .project-img {
-    width: 120px;
-    position: absolute;
-    top: 28px;
-    left: 34px;
-    z-index: 1;
-  }
-}
-
 /* Contact */
 .main-contact {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -285,5 +279,106 @@ input[type="submit"]:hover {
   input[type="submit"] {
     width: 100%;
     margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  /*Home*/
+  .home-container {
+    top: 10%;
+  }
+  .techienaut-logo {
+    width: 224px;
+  }
+  h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  p {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  .home-container > a {
+    font-size: 24px;
+  }
+  .home-container > h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  /*About Me*/
+  .aboutme-container {
+    width: 60%;
+  }
+
+  /*Work Hist*/
+  .work-container,
+  .certs-container {
+    width: 45%;
+  }
+  .main-workhist h1 {
+    font-size: 30px;
+  }
+  .workhist-arrow-container {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  /*Home*/
+  .home-container {
+    top: 10%;
+  }
+  .techienaut-logo {
+    width: 256px;
+  }
+  .scroll-link > h3 {
+    margin-bottom: 12px;
+    font-size: 32px;
+  }
+  .scroll-link > img {
+    width: 86px;
+  }
+
+  /*About Me*/
+  .aboutme-container {
+    width: 40%;
+  }
+
+  /*Work Hist*/
+  .work-container,
+  .certs-container {
+    width: 35%;
+  }
+  .work-header-container > h1,
+  .certs-container > h1 {
+    font-size: 48px;
+  }
+  .work-container > h3,
+  .certs-container > h3 {
+    font-size: 26px;
+  }
+  .work-container > h4,
+  .certs-container > h4 {
+    font-size: 20px;
+  }
+  .linkedin-logo,
+  .empty-linkedin-logo {
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+  }
+
+  /*Projects*/
+  .project-spaceship {
+    width: 184px;
+  }
+  .project-img {
+    width: 120px;
+    position: absolute;
+    top: 28px;
+    left: 34px;
+    z-index: 1;
+  }
+  .main-projects > a {
+    margin-top: 16px;
   }
 }
