@@ -17,7 +17,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | D3   | Finish Wireframe, Research Libraries and other assest, [Code] Front Page, [Code] About me, | Complete |
 | D4   | [Code] Work history, [Code] Projects, [Code] Skill divs (MVP) | Complete |
 | D5   | [Code] Contact Form, Skill Mind Map                          | Complete |
-| D6   | Present                                                      |          |
+| D6   | Present                                                      | Complete |
 
 Example
 
@@ -38,29 +38,28 @@ My website will show to potential employers and clients will showcase a collecti
 
 - Front Page
   - Navigation bar
-  - Tron-like background theme
+  - Logo
   - Link to twitter handle (@techienaut)
   - Click to scroll down button.
 - About Me
   - Showcase story
-  - headers: Methodical, Creative, Knowledge Seeker
-    - Descriptions underneath
+  - Click to scroll down button.
 - Work History and Education
-  - "Connect with me on Linkedin" (Linkedin profile link)
+  - Linkedin profile link
   - Work History
   - Certifications
+  - Click to scroll down button
 - Projects
   - All GA Projects
-  - Past Github projects
-  - Using UI Cards
   - Google's API for spreadsheet
+  - Carousel
+  - Click to scroll down button
 - Skillset
-  - MVP: Using UI Cards for skills
   - Extra: Mind Map Library showcasing knowledge tree.
+  - Click to scroll down button
 - Contact Form
-  - Links to social media
   - Form to fill email and message
-  - google forms: emails me to my inbox
+  - google forms: Pings me to my inbox
 
 ## Google Sheet
 
