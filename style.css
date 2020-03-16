@@ -221,6 +221,8 @@ nav {
   left: 22px;
   z-index: 1;
 }
+
+/*Skills*/
 .main-skills {
   display: flex;
   flex-direction: column;
@@ -233,6 +235,7 @@ iframe {
   height: 70vh;
   width: 80%;
 }
+
 /* Contact */
 .main-contact {
   display: flex;
