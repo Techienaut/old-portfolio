@@ -204,13 +204,13 @@ function app(projects) {
 
 #### Full screen section overflows with content
 
-**ERROR**: If, say, you collapse the browser window vertically, then content overfi                           
+**ERROR**: If, say, you collapse the browser window vertically, then content overfiled                           
 **RESOLUTION**: Used **min-height: 100vh** to allow page section to expand with content.
 
 #### Section content needs to be centered
 
 **ERROR**: Can't vertically, and horizontally center content per section.                    
-**RESOLUTION**: Set section to **display: flex; flex-direction: collumn; justify-content: center; align-items: center;**.
+**RESOLUTION**: Set section to **display: flex; flex-direction: column; justify-content: center; align-items: center;**.
 
 #### Projects carousel collapses its height when loading projects using jQuery
 
